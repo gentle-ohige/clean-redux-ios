@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import ReSwift
+
+let mainStore = Store( reducer: mainReducer, state: ReAppState(), middleware: [] )
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    private lazy var appStorage :StorageManager = StorageManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Gotu main story board
+        mainStore.dispatch(fetchTodoData)
         return true
     }
 
