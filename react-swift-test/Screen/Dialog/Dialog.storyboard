@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Todo Dialog Controller-->
+        <scene sceneID="eJe-Ks-OWM">
+            <objects>
+                <viewController storyboardIdentifier="addBaseDialog" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xBx-ga-cJ4" customClass="AddTodoDialogController" customModule="react_swift_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S0M-1m-a5t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-KT-zVo">
+                                <rect key="frame" x="24" y="24" width="552" height="552"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BWc-P1-mXj">
+                                        <rect key="frame" x="22" y="22" width="508" height="508"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7P-Zl-kAJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="508" height="78"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxZ-1b-DJU">
+                                                <rect key="frame" x="0.0" y="86" width="508" height="78"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToDo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-PO-ba3">
+                                                <rect key="frame" x="0.0" y="172" width="508" height="78"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-I8-yYw">
+                                                <rect key="frame" x="0.0" y="258" width="508" height="78"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1O-7N-jAJ">
+                                                <rect key="frame" x="0.0" y="344" width="508" height="78"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Add">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addUserTodo:" destination="xBx-ga-cJ4" eventType="touchUpInside" id="5l2-iR-EY5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQL-Wv-xgj">
+                                                <rect key="frame" x="0.0" y="430" width="508" height="78"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeDialog" destination="xBx-ga-cJ4" eventType="touchUpInside" id="3Ij-R0-FiC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BWc-P1-mXj" firstAttribute="height" secondItem="lMW-KT-zVo" secondAttribute="height" multiplier="0.92" id="6Rz-YB-jKA"/>
+                                    <constraint firstAttribute="width" secondItem="lMW-KT-zVo" secondAttribute="height" id="NpE-Ti-CyM"/>
+                                    <constraint firstItem="BWc-P1-mXj" firstAttribute="width" secondItem="lMW-KT-zVo" secondAttribute="width" multiplier="0.92" id="XvY-K5-hlY"/>
+                                    <constraint firstItem="BWc-P1-mXj" firstAttribute="centerX" secondItem="lMW-KT-zVo" secondAttribute="centerX" id="m1k-nM-6CW"/>
+                                    <constraint firstItem="BWc-P1-mXj" firstAttribute="centerY" secondItem="lMW-KT-zVo" secondAttribute="centerY" id="m4u-J2-8cu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lMW-KT-zVo" firstAttribute="width" secondItem="S0M-1m-a5t" secondAttribute="width" multiplier="0.92" id="6Rp-jg-9kL"/>
+                            <constraint firstItem="lMW-KT-zVo" firstAttribute="centerY" secondItem="S0M-1m-a5t" secondAttribute="centerY" id="I4z-Me-VTi"/>
+                            <constraint firstItem="lMW-KT-zVo" firstAttribute="centerX" secondItem="S0M-1m-a5t" secondAttribute="centerX" id="TBU-b4-bFc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oWs-rW-Zkl"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="KxZ-1b-DJU" id="MsA-ZM-VWd"/>
+                        <outlet property="todoTextField" destination="Zf0-I8-yYw" id="K8a-Xb-REc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSd-zI-HKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="334"/>
+        </scene>
+    </scenes>
+</document>

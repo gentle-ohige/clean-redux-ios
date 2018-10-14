@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B5C96EDA587C949907F1217 /* Pods_react_swift_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F7050B6F600BC4370DC67A /* Pods_react_swift_testTests.framework */; };
+		3C0433592165785500541BD3 /* TodoListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0433582165785500541BD3 /* TodoListViewState.swift */; };
 		3C0645572145517F007C8235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645562145517F007C8235 /* AppDelegate.swift */; };
 		3C0645592145517F007C8235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645582145517F007C8235 /* ViewController.swift */; };
 		3C06455C2145517F007C8235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C06455A2145517F007C8235 /* Main.storyboard */; };
@@ -15,8 +15,25 @@
 		3C06456121455180007C8235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C06455F21455180007C8235 /* LaunchScreen.storyboard */; };
 		3C06456C21455180007C8235 /* react_swift_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06456B21455180007C8235 /* react_swift_testTests.swift */; };
 		3C06457721455180007C8235 /* react_swift_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06457621455180007C8235 /* react_swift_testUITests.swift */; };
+		3C0645C12145C761007C8235 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C02145C761007C8235 /* MainAction.swift */; };
+		3C0645C72145CDDB007C8235 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C62145CDDB007C8235 /* MainReducer.swift */; };
+		3C0645CA2145CF88007C8235 /* ReAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C92145CF88007C8235 /* ReAppState.swift */; };
+		3C1B952221691C9E001F2E6A /* AddTodoDialogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */; };
+		3C1B952521691CFD001F2E6A /* DialogBaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952421691CFD001F2E6A /* DialogBaseState.swift */; };
+		3C1B952E216A20F0001F2E6A /* TodoListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952D216A20F0001F2E6A /* TodoListUsecase.swift */; };
+		3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9534216A360F001F2E6A /* ConvertWorker.swift */; };
+		3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9536216A568C001F2E6A /* TodoRepo.swift */; };
+		3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9538216B763A001F2E6A /* ActionCreater.swift */; };
+		3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */; };
+		3C4BB2F32160A96B007FBD69 /* storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB2F12160A96B007FBD69 /* storage.xcdatamodeld */; };
+		3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */; };
+		3C4BB3042160B9D7007FBD69 /* UserAction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */; };
+		3C4BB3072160BFED007FBD69 /* Dialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4BB3062160BFED007FBD69 /* Dialog.storyboard */; };
+		3C4BB3092160C0BB007FBD69 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */; };
+		3C4BB3112160F812007FBD69 /* AddTodoDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */; };
+		3CAB72292152FF6D00FD9B81 /* StorageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB72282152FF6D00FD9B81 /* StorageUtil.swift */; };
+		3CAB722E2154562600FD9B81 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB722D2154562600FD9B81 /* StorageManager.swift */; };
 		A82135BE125616FFF46A122C /* Pods_react_swift_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018E7A5F79A33B0D72E7F28F /* Pods_react_swift_test.framework */; };
-		C1712D97120165995C89CDB5 /* Pods_react_swift_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D20E079BEA518A81CAE933 /* Pods_react_swift_testUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		018E7A5F79A33B0D72E7F28F /* Pods_react_swift_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_swift_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0433582165785500541BD3 /* TodoListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewState.swift; sourceTree = "<group>"; };
 		3C0645532145517F007C8235 /* react-swift-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "react-swift-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0645562145517F007C8235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0645582145517F007C8235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,14 +69,28 @@
 		3C06457221455180007C8235 /* react-swift-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "react-swift-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C06457621455180007C8235 /* react_swift_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = react_swift_testUITests.swift; sourceTree = "<group>"; };
 		3C06457821455180007C8235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0645C02145C761007C8235 /* MainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		3C0645C62145CDDB007C8235 /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		3C0645C92145CF88007C8235 /* ReAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAppState.swift; sourceTree = "<group>"; };
+		3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoDialogViewState.swift; sourceTree = "<group>"; };
+		3C1B952421691CFD001F2E6A /* DialogBaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBaseState.swift; sourceTree = "<group>"; };
+		3C1B952D216A20F0001F2E6A /* TodoListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListUsecase.swift; sourceTree = "<group>"; };
+		3C1B9534216A360F001F2E6A /* ConvertWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWorker.swift; sourceTree = "<group>"; };
+		3C1B9536216A568C001F2E6A /* TodoRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepo.swift; sourceTree = "<group>"; };
+		3C1B9538216B763A001F2E6A /* ActionCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreater.swift; sourceTree = "<group>"; };
+		3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDailogViewState.swift; sourceTree = "<group>"; };
+		3C4BB2F22160A96B007FBD69 /* storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = storage.xcdatamodel; sourceTree = "<group>"; };
+		3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C4BB3062160BFED007FBD69 /* Dialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dialog.storyboard; sourceTree = "<group>"; };
+		3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoDialogController.swift; sourceTree = "<group>"; };
+		3CAB72282152FF6D00FD9B81 /* StorageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUtil.swift; sourceTree = "<group>"; };
+		3CAB722D2154562600FD9B81 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		5214414EC266E07DCE67584D /* Pods-react-swift-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-test/Pods-react-swift-test.release.xcconfig"; sourceTree = "<group>"; };
 		59D20E079BEA518A81CAE933 /* Pods_react_swift_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_swift_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A52C11F50C14570BF7FDE2F /* Pods-react-swift-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-testTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-testTests/Pods-react-swift-testTests.release.xcconfig"; sourceTree = "<group>"; };
-		5B0DB7A8A7012F941C5D55B7 /* Pods-react-swift-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-testTests/Pods-react-swift-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		68DE8305F8C0C331A88C332C /* Pods-react-swift-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-test/Pods-react-swift-test.debug.xcconfig"; sourceTree = "<group>"; };
-		9C2809523C514385672EC334 /* Pods-react-swift-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-testUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-testUITests/Pods-react-swift-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6F7050B6F600BC4370DC67A /* Pods_react_swift_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_swift_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C909E24B2376FED88F21BC81 /* Pods-react-swift-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-swift-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-react-swift-testUITests/Pods-react-swift-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5C96EDA587C949907F1217 /* Pods_react_swift_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,16 +113,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1712D97120165995C89CDB5 /* Pods_react_swift_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0433572165779500541BD3 /* ViewState */ = {
+			isa = PBXGroup;
+			children = (
+				3C0433582165785500541BD3 /* TodoListViewState.swift */,
+				3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */,
+				3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */,
+			);
+			path = ViewState;
+			sourceTree = "<group>";
+		};
 		3C06454A2145517E007C8235 = {
 			isa = PBXGroup;
 			children = (
+				3C0645C22145CC43007C8235 /* Usecase */,
+				3C52B061214DFDA900EAF6A9 /* Core */,
 				3C0645552145517F007C8235 /* react-swift-test */,
 				3C06456A21455180007C8235 /* react-swift-testTests */,
 				3C06457521455180007C8235 /* react-swift-testUITests */,
@@ -114,9 +156,12 @@
 		3C0645552145517F007C8235 /* react-swift-test */ = {
 			isa = PBXGroup;
 			children = (
+				3C1B952921692292001F2E6A /* Model */,
+				3C0645BE2145C429007C8235 /* Reducer */,
+				3C0645BF2145C437007C8235 /* Actions */,
+				3C0645C82145CF6B007C8235 /* State */,
+				3C0645CB21471E07007C8235 /* Screen */,
 				3C0645562145517F007C8235 /* AppDelegate.swift */,
-				3C0645582145517F007C8235 /* ViewController.swift */,
-				3C06455A2145517F007C8235 /* Main.storyboard */,
 				3C06455D21455180007C8235 /* Assets.xcassets */,
 				3C06455F21455180007C8235 /* LaunchScreen.storyboard */,
 				3C06456221455180007C8235 /* Info.plist */,
@@ -142,15 +187,120 @@
 			path = "react-swift-testUITests";
 			sourceTree = "<group>";
 		};
+		3C0645BE2145C429007C8235 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				3C0645C62145CDDB007C8235 /* MainReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		3C0645BF2145C437007C8235 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3C0645C02145C761007C8235 /* MainAction.swift */,
+				3C1B9538216B763A001F2E6A /* ActionCreater.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		3C0645C22145CC43007C8235 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B9533216A354C001F2E6A /* Workers */,
+				3C1B952D216A20F0001F2E6A /* TodoListUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		3C0645C82145CF6B007C8235 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B952321691CE5001F2E6A /* BaseState */,
+				3C0433572165779500541BD3 /* ViewState */,
+				3C0645C92145CF88007C8235 /* ReAppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		3C0645CB21471E07007C8235 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3C4BB3052160BFC6007FBD69 /* Dialog */,
+				3C0645CC21471E1B007C8235 /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		3C0645CC21471E1B007C8235 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3C0645582145517F007C8235 /* ViewController.swift */,
+				3C06455A2145517F007C8235 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3C1B952321691CE5001F2E6A /* BaseState */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B952421691CFD001F2E6A /* DialogBaseState.swift */,
+			);
+			path = BaseState;
+			sourceTree = "<group>";
+		};
+		3C1B952921692292001F2E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B9536216A568C001F2E6A /* TodoRepo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C1B9533216A354C001F2E6A /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B9534216A360F001F2E6A /* ConvertWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		3C4BB2F42160B277007FBD69 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */,
+				3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3C4BB3052160BFC6007FBD69 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				3C4BB3062160BFED007FBD69 /* Dialog.storyboard */,
+				3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */,
+				3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		3C52B061214DFDA900EAF6A9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3C4BB2F42160B277007FBD69 /* Entity */,
+				3CAB72282152FF6D00FD9B81 /* StorageUtil.swift */,
+				3CAB722D2154562600FD9B81 /* StorageManager.swift */,
+				3C4BB2F12160A96B007FBD69 /* storage.xcdatamodeld */,
+			);
+			name = Core;
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		C8825A9878FCA3A1735D0010 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				68DE8305F8C0C331A88C332C /* Pods-react-swift-test.debug.xcconfig */,
 				5214414EC266E07DCE67584D /* Pods-react-swift-test.release.xcconfig */,
-				5B0DB7A8A7012F941C5D55B7 /* Pods-react-swift-testTests.debug.xcconfig */,
-				5A52C11F50C14570BF7FDE2F /* Pods-react-swift-testTests.release.xcconfig */,
-				9C2809523C514385672EC334 /* Pods-react-swift-testUITests.debug.xcconfig */,
-				C909E24B2376FED88F21BC81 /* Pods-react-swift-testUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -176,6 +326,7 @@
 				3C06454F2145517F007C8235 /* Sources */,
 				3C0645502145517F007C8235 /* Frameworks */,
 				3C0645512145517F007C8235 /* Resources */,
+				5802BF26FE0CBF613F7A859A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,11 +341,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C06457E21455180007C8235 /* Build configuration list for PBXNativeTarget "react-swift-testTests" */;
 			buildPhases = (
-				85E4F87180D6A618F8396799 /* [CP] Check Pods Manifest.lock */,
 				3C06456321455180007C8235 /* Sources */,
 				3C06456421455180007C8235 /* Frameworks */,
 				3C06456521455180007C8235 /* Resources */,
-				C62824492BB3FF2C179B9DC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,11 +359,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C06458121455180007C8235 /* Build configuration list for PBXNativeTarget "react-swift-testUITests" */;
 			buildPhases = (
-				F975BC6764BC208ED0262E6D /* [CP] Check Pods Manifest.lock */,
 				3C06456E21455180007C8235 /* Sources */,
 				3C06456F21455180007C8235 /* Frameworks */,
 				3C06457021455180007C8235 /* Resources */,
-				C156197A56121637A10ABDF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +423,7 @@
 			files = (
 				3C06456121455180007C8235 /* LaunchScreen.storyboard in Resources */,
 				3C06455E21455180007C8235 /* Assets.xcassets in Resources */,
+				3C4BB3072160BFED007FBD69 /* Dialog.storyboard in Resources */,
 				3C06455C2145517F007C8235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,15 +450,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-react-swift-test-checkManifestLockResult.txt",
 			);
@@ -319,100 +463,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85E4F87180D6A618F8396799 /* [CP] Check Pods Manifest.lock */ = {
+		5802BF26FE0CBF613F7A859A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react-swift-testTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C156197A56121637A10ABDF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-testUITests/Pods-react-swift-testUITests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-test/Pods-react-swift-test-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-testUITests/Pods-react-swift-testUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C62824492BB3FF2C179B9DC4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-testTests/Pods-react-swift-testTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-testTests/Pods-react-swift-testTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F975BC6764BC208ED0262E6D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-react-swift-testUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-react-swift-test/Pods-react-swift-test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -423,7 +497,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0645592145517F007C8235 /* ViewController.swift in Sources */,
+				3C1B952521691CFD001F2E6A /* DialogBaseState.swift in Sources */,
+				3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */,
+				3C0645C72145CDDB007C8235 /* MainReducer.swift in Sources */,
 				3C0645572145517F007C8235 /* AppDelegate.swift in Sources */,
+				3CAB72292152FF6D00FD9B81 /* StorageUtil.swift in Sources */,
+				3C1B952221691C9E001F2E6A /* AddTodoDialogViewState.swift in Sources */,
+				3C0645C12145C761007C8235 /* MainAction.swift in Sources */,
+				3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */,
+				3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */,
+				3C0645CA2145CF88007C8235 /* ReAppState.swift in Sources */,
+				3C1B952E216A20F0001F2E6A /* TodoListUsecase.swift in Sources */,
+				3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */,
+				3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */,
+				3C4BB3112160F812007FBD69 /* AddTodoDialogController.swift in Sources */,
+				3CAB722E2154562600FD9B81 /* StorageManager.swift in Sources */,
+				3C4BB3092160C0BB007FBD69 /* DialogViewController.swift in Sources */,
+				3C4BB3042160B9D7007FBD69 /* UserAction+CoreDataProperties.swift in Sources */,
+				3C0433592165785500541BD3 /* TodoListViewState.swift in Sources */,
+				3C4BB2F32160A96B007FBD69 /* storage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "react-swift-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,7 +699,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gentleohige.react-swift-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -617,6 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "react-swift-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,13 +718,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gentleohige.react-swift-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		3C06457F21455180007C8235 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B0DB7A8A7012F941C5D55B7 /* Pods-react-swift-testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -651,7 +744,6 @@
 		};
 		3C06458021455180007C8235 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A52C11F50C14570BF7FDE2F /* Pods-react-swift-testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -672,7 +764,6 @@
 		};
 		3C06458221455180007C8235 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C2809523C514385672EC334 /* Pods-react-swift-testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -692,7 +783,6 @@
 		};
 		3C06458321455180007C8235 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C909E24B2376FED88F21BC81 /* Pods-react-swift-testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,6 +840,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C4BB2F12160A96B007FBD69 /* storage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C4BB2F22160A96B007FBD69 /* storage.xcdatamodel */,
+			);
+			currentVersion = 3C4BB2F22160A96B007FBD69 /* storage.xcdatamodel */;
+			path = storage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3C06454B2145517E007C8235 /* Project object */;
 }
