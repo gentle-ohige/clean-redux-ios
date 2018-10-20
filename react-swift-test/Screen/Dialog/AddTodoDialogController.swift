@@ -21,11 +21,14 @@ class AddTodoDialogController: DialogViewController,DialogViewProtocol,AddTodoDi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     
     override func viewWillAppear(_ animated: Bool) {
         mainStore.subscribe(self, transform: {$0.select(AddTodoDialogViewState.init)})
+        //init Data
+        titleTextField.text = ""
+        todoTextField.text = ""
     }
     override func viewWillDisappear(_ animated: Bool) {
       mainStore.unsubscribe(self)
@@ -33,7 +36,7 @@ class AddTodoDialogController: DialogViewController,DialogViewProtocol,AddTodoDi
     }
     static func makeDialog() -> UIViewController {
         let storyboard  =  UIStoryboard.init(name: "Dialog", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "addBaseDialog")
+        let controller = storyboard.instantiateViewController(withIdentifier: "AddTodoDialog")
         controller.modalPresentationStyle = .overCurrentContext
         controller.modalTransitionStyle = .crossDissolve
         return controller

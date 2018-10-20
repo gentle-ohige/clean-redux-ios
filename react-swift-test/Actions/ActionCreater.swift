@@ -21,12 +21,16 @@ func addTodoData(state: ReAppState, store: Store<ReAppState>) -> Action? {
     guard case let .save(data) = state.addDialogState else {
         return nil
     }
-    
     //convertdata to model
     var modelData = TodoModel()
     modelData.title = data.todoTitle
     modelData.todo = data.todo
     modelData.date = data.date
-    TodoModel.saveTodo(modelData, complition: nil)
+    TodoModel.saveTodo(modelData, complition: {
+        mainStore.dispatch(fetchTodoData)
+    })
     return nil
 }
+
+
+

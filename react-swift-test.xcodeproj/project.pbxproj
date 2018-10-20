@@ -24,7 +24,8 @@
 		3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9534216A360F001F2E6A /* ConvertWorker.swift */; };
 		3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9536216A568C001F2E6A /* TodoRepo.swift */; };
 		3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9538216B763A001F2E6A /* ActionCreater.swift */; };
-		3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */; };
+		3C31E756217B0E9D001A14B4 /* DetailDailogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E755217B0E9D001A14B4 /* DetailDailogViewState.swift */; };
+		3C31E758217B0F5C001A14B4 /* DetailDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */; };
 		3C4BB2F32160A96B007FBD69 /* storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB2F12160A96B007FBD69 /* storage.xcdatamodeld */; };
 		3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */; };
 		3C4BB3042160B9D7007FBD69 /* UserAction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */; };
@@ -78,7 +79,8 @@
 		3C1B9534216A360F001F2E6A /* ConvertWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWorker.swift; sourceTree = "<group>"; };
 		3C1B9536216A568C001F2E6A /* TodoRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepo.swift; sourceTree = "<group>"; };
 		3C1B9538216B763A001F2E6A /* ActionCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreater.swift; sourceTree = "<group>"; };
-		3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDailogViewState.swift; sourceTree = "<group>"; };
+		3C31E755217B0E9D001A14B4 /* DetailDailogViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDailogViewState.swift; sourceTree = "<group>"; };
+		3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDialogController.swift; sourceTree = "<group>"; };
 		3C4BB2F22160A96B007FBD69 /* storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = storage.xcdatamodel; sourceTree = "<group>"; };
 		3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -122,9 +124,9 @@
 		3C0433572165779500541BD3 /* ViewState */ = {
 			isa = PBXGroup;
 			children = (
+				3C31E755217B0E9D001A14B4 /* DetailDailogViewState.swift */,
 				3C0433582165785500541BD3 /* TodoListViewState.swift */,
 				3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */,
-				3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */,
 			);
 			path = ViewState;
 			sourceTree = "<group>";
@@ -280,6 +282,7 @@
 				3C4BB3062160BFED007FBD69 /* Dialog.storyboard */,
 				3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */,
 				3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */,
+				3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */,
 			);
 			path = Dialog;
 			sourceTree = "<group>";
@@ -498,11 +501,11 @@
 			files = (
 				3C0645592145517F007C8235 /* ViewController.swift in Sources */,
 				3C1B952521691CFD001F2E6A /* DialogBaseState.swift in Sources */,
-				3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */,
 				3C0645C72145CDDB007C8235 /* MainReducer.swift in Sources */,
 				3C0645572145517F007C8235 /* AppDelegate.swift in Sources */,
 				3CAB72292152FF6D00FD9B81 /* StorageUtil.swift in Sources */,
 				3C1B952221691C9E001F2E6A /* AddTodoDialogViewState.swift in Sources */,
+				3C31E756217B0E9D001A14B4 /* DetailDailogViewState.swift in Sources */,
 				3C0645C12145C761007C8235 /* MainAction.swift in Sources */,
 				3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */,
 				3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */,
@@ -510,6 +513,7 @@
 				3C1B952E216A20F0001F2E6A /* TodoListUsecase.swift in Sources */,
 				3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */,
 				3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */,
+				3C31E758217B0F5C001A14B4 /* DetailDialogController.swift in Sources */,
 				3C4BB3112160F812007FBD69 /* AddTodoDialogController.swift in Sources */,
 				3CAB722E2154562600FD9B81 /* StorageManager.swift in Sources */,
 				3C4BB3092160C0BB007FBD69 /* DialogViewController.swift in Sources */,

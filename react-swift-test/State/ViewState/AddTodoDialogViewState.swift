@@ -15,13 +15,15 @@ protocol AddTodoDialogDataProtocol {
     var date:Date? {get set}
 }
 
-//Action
+// Action
+// 画面の更新値のみを記入します
+// 内部処理を記入するとループ処理が発生する可能性があります。特にSaveとか
+
 struct AddTodoDialogViewState:AddTodoDialogDataProtocol{
     
     var todoTitle: String?
     var todo: String?
     var date: Date?
-    
     
     init(_ state:ReAppState) {
         switch  state.addDialogState {

@@ -9,7 +9,7 @@
 import UIKit
 import ReSwift
 
-enum AddTodoDialogState {
+enum AddTodoDialogState:StateType{
     case hide
     case show
     case showed
@@ -17,7 +17,7 @@ enum AddTodoDialogState {
     case save(AddTodoDialogDataProtocol)
 }
 
-enum DetailDialogState {
+enum DetailDialogState:StateType{
     case hide
     case show(TodoModel)
     case showed

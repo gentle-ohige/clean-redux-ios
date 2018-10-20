@@ -15,22 +15,21 @@ import RxSwift
 import CoreData
 
 class ViewController: UIViewController {
-    
-
 
     var todos:[TodoModel]?
     let diposeBag = DisposeBag ()
 
-    let addTodoDialog =  AddTodoDialogController.makeDialog()
+    let addTodoDialog = AddTodoDialogController.makeDialog()
+    let detailDialog = DetailDialogController.makeDialog()
 
     @IBOutlet weak var tableview: UITableView! {
         didSet {
             tableview.rx.itemSelected.bind(onNext: {_ in
-                    print("itemSelected")
+            
             }).disposed(by:diposeBag)
             
             tableview.rx.willDisplayCell.bind(onNext: {_ in
-                print("willDisplayCell")
+               
             }).disposed(by:diposeBag)
         }
     }
@@ -57,16 +56,19 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         mainStore.unsubscribe(self)
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos?.count ?? 0
     }
 
     @IBAction func showAddDialog () {
-        present(addTodoDialog, animated: true, completion: nil)
         mainStore.dispatch(MainAction.showAddDialog)
+        present(addTodoDialog, animated: true, completion: nil)
     }
-
 }
 // MARK: StoreSubscriber
 extension ViewController : StoreSubscriber {
@@ -77,7 +79,6 @@ extension ViewController : StoreSubscriber {
         todos = state.datas
         tableview.reloadData()
     }
-    
 }
 
 // MARK: DataSource
@@ -90,9 +91,13 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.textLabel?.text = todos?[indexPath.row].title
         cell?.detailTextLabel?.text = todos?[indexPath.row].todo
-        
         return cell!
     }
-    
-    
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        mainStore.dispatch(MainAction.showDetailDialog(todos?[indexPath.row] ?? TodoModel()))
+        present(detailDialog, animated: true, completion: nil)
+    }
 }

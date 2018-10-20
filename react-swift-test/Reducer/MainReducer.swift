@@ -29,8 +29,7 @@ func mainReducer (action:Action,state : ReAppState?) -> ReAppState {
      
      //Todo
     case .showDetailDialog(let todo):
-         //state.DetailTodoDialogState.dialogData = todo
-        // state.DetailTodoDialogState.dialogState = .show
+        state.detailDialogState = .show(todo)
         break
     case .hideDetailDialog:
         //state.DetailTodoDialogState.dialogState = .hide

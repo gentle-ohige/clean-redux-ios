@@ -9,7 +9,7 @@
 import UIKit
 
 
-struct TodoModel {
+struct TodoModel{
     var title: String? = ""
     var todo: String? = ""
     var date: Date? = nil
