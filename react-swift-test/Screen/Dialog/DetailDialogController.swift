@@ -16,16 +16,16 @@ class DetailDialogController: DialogViewController,DialogViewProtocol{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         mainStore.subscribe(self, transform: {$0.select(DetailDailogViewState.init)})
+
     }
     override func viewWillDisappear(_ animated: Bool) {
-      mainStore.unsubscribe(self)
-      mainStore.dispatch(MainAction.hideAddDialog)
+        mainStore.unsubscribe(self)
     }
     static func makeDialog() -> UIViewController {
         let storyboard  =  UIStoryboard.init(name: "Dialog", bundle: nil)
@@ -49,8 +49,33 @@ extension DetailDialogController: StoreSubscriber {
     func newState(state: DetailDailogViewState) {
         titleLabel.text = state.title
         todoLabel.text = state.todo
-        
     }
 }
+
+
+struct DetailDailogViewState {
+    var title: String? = ""
+    var todo: String? = ""
+    var date: Date? = nil
+    
+    init(_ state:ReAppState) {
+        guard let data =  state.detailDialogState.data else {
+            return
+        }
+        self.title = data.title
+        self.todo = data.todo
+        self.date = data.date
+    }
+}
+
+extension DetailDailogViewState: SubscriberRepeat {
+    typealias viewState = DetailDailogViewState
+    static func isSkip () -> isRepeatClosure {
+        return {(pre,next) in
+            return false
+        }
+    }
+}
+
 
 

@@ -8,33 +8,3 @@
 
 import ReSwift
 
-func mainReducer (action:Action,state : ReAppState?) -> ReAppState {
-    var state = state ?? ReAppState()
-    
-    guard let action = action as? MainAction else {
-        return state
-    }
-    
-    switch action {
-    case .setFetchedTodoData(let datas):
-        state.datas = datas
-    case .showAddDialog:
-        state.addDialogState = .show
-    case .setAddTodoState(let proto):
-        state.addDialogState = .save(proto)
-        break
-    case .hideAddDialog:
-        state.addDialogState = .hide
-        break
-     
-     //Todo
-    case .showDetailDialog(let todo):
-        state.detailDialogState = .show(todo)
-        break
-    case .hideDetailDialog:
-        //state.DetailTodoDialogState.dialogState = .hide
-        break
-    }
-    
-    return state
-}

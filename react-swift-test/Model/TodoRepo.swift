@@ -31,4 +31,13 @@ extension TodoModel{
        
     }
 }
+extension TodoModel:Equatable {
+    static func == (lhs: TodoModel, rhs: TodoModel) -> Bool{
+        let isEqual = lhs.title == rhs.title &&
+                       lhs.todo == rhs.todo &&
+                        lhs.date == rhs.date
+        
+        return isEqual
+    }
+}
 

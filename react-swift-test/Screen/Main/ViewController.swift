@@ -14,6 +14,7 @@ import RxSwift
 
 import CoreData
 
+// MARK: ViewController
 class ViewController: UIViewController {
 
     var todos:[TodoModel]?
@@ -47,9 +48,7 @@ class ViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        mainStore.subscribe(self,transform: {
-            $0.select(TodoListViewState.init)
-        })
+        mainStore.subscribe(self){$0.select(ViewState.init).skipRepeats(ViewState.isSkip())}
     }
     
 
@@ -64,18 +63,23 @@ class ViewController: UIViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos?.count ?? 0
     }
-
+}
+// MARK: ViewAction
+extension ViewController  {
     @IBAction func showAddDialog () {
-        mainStore.dispatch(MainAction.showAddDialog)
         present(addTodoDialog, animated: true, completion: nil)
     }
 }
+
+
+
 // MARK: StoreSubscriber
 extension ViewController : StoreSubscriber {
     
-    typealias StoreSubscriberStateType = TodoListViewState
+    typealias StoreSubscriberStateType = ViewState
     
-    func newState(state: TodoListViewState) {
+    func newState(state: ViewState) {
+        print("ViewController-newState")
         todos = state.datas
         tableview.reloadData()
     }
@@ -97,7 +101,31 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        mainStore.dispatch(MainAction.showDetailDialog(todos?[indexPath.row] ?? TodoModel()))
+        mainStore.dispatch(DetailDialogState.Act.showAddDialog(model:todos?[indexPath.row] ?? TodoModel()))
         present(detailDialog, animated: true, completion: nil)
     }
 }
+
+// MARK: ViewState
+struct ViewState {
+    let datas:[TodoModel]
+    init(_ state: ReAppState) {
+        datas = state.todoListState.datas
+    }
+}
+
+
+extension  ViewState: SubscriberRepeat {
+    typealias viewState = ViewState
+    static func isSkip () -> isRepeatClosure {
+        return {(pre,next) in
+            return pre.datas == next.datas
+        }
+    }
+}
+
+
+
+
+
+
