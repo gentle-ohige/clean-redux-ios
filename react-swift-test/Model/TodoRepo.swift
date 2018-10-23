@@ -9,7 +9,7 @@
 import UIKit
 
 
-struct TodoModel {
+struct TodoModel{
     var title: String? = ""
     var todo: String? = ""
     var date: Date? = nil
@@ -29,6 +29,15 @@ extension TodoModel{
             complition!()
         }
        
+    }
+}
+extension TodoModel:Equatable {
+    static func == (lhs: TodoModel, rhs: TodoModel) -> Bool{
+        let isEqual = lhs.title == rhs.title &&
+                       lhs.todo == rhs.todo &&
+                        lhs.date == rhs.date
+        
+        return isEqual
     }
 }
 

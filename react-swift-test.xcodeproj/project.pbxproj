@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C0433592165785500541BD3 /* TodoListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0433582165785500541BD3 /* TodoListViewState.swift */; };
+		3C0433592165785500541BD3 /* TodoListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0433582165785500541BD3 /* TodoListState.swift */; };
 		3C0645572145517F007C8235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645562145517F007C8235 /* AppDelegate.swift */; };
 		3C0645592145517F007C8235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645582145517F007C8235 /* ViewController.swift */; };
 		3C06455C2145517F007C8235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C06455A2145517F007C8235 /* Main.storyboard */; };
@@ -15,21 +15,20 @@
 		3C06456121455180007C8235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C06455F21455180007C8235 /* LaunchScreen.storyboard */; };
 		3C06456C21455180007C8235 /* react_swift_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06456B21455180007C8235 /* react_swift_testTests.swift */; };
 		3C06457721455180007C8235 /* react_swift_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06457621455180007C8235 /* react_swift_testUITests.swift */; };
-		3C0645C12145C761007C8235 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C02145C761007C8235 /* MainAction.swift */; };
-		3C0645C72145CDDB007C8235 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C62145CDDB007C8235 /* MainReducer.swift */; };
 		3C0645CA2145CF88007C8235 /* ReAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0645C92145CF88007C8235 /* ReAppState.swift */; };
-		3C1B952221691C9E001F2E6A /* AddTodoDialogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */; };
-		3C1B952521691CFD001F2E6A /* DialogBaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952421691CFD001F2E6A /* DialogBaseState.swift */; };
+		3C1B952221691C9E001F2E6A /* AddTodoDialogState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952121691C9E001F2E6A /* AddTodoDialogState.swift */; };
 		3C1B952E216A20F0001F2E6A /* TodoListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B952D216A20F0001F2E6A /* TodoListUsecase.swift */; };
 		3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9534216A360F001F2E6A /* ConvertWorker.swift */; };
 		3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9536216A568C001F2E6A /* TodoRepo.swift */; };
 		3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B9538216B763A001F2E6A /* ActionCreater.swift */; };
-		3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */; };
+		3C31E756217B0E9D001A14B4 /* DetailDailogState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E755217B0E9D001A14B4 /* DetailDailogState.swift */; };
+		3C31E758217B0F5C001A14B4 /* DetailDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */; };
+		3C31E75E217D371F001A14B4 /* ReSwiftUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E75D217D371F001A14B4 /* ReSwiftUtil.swift */; };
+		3C31E768217E1C77001A14B4 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31E767217E1C77001A14B4 /* DialogViewController.swift */; };
 		3C4BB2F32160A96B007FBD69 /* storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB2F12160A96B007FBD69 /* storage.xcdatamodeld */; };
 		3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */; };
 		3C4BB3042160B9D7007FBD69 /* UserAction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */; };
 		3C4BB3072160BFED007FBD69 /* Dialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4BB3062160BFED007FBD69 /* Dialog.storyboard */; };
-		3C4BB3092160C0BB007FBD69 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */; };
 		3C4BB3112160F812007FBD69 /* AddTodoDialogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */; };
 		3CAB72292152FF6D00FD9B81 /* StorageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB72282152FF6D00FD9B81 /* StorageUtil.swift */; };
 		3CAB722E2154562600FD9B81 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB722D2154562600FD9B81 /* StorageManager.swift */; };
@@ -55,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		018E7A5F79A33B0D72E7F28F /* Pods_react_swift_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_swift_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C0433582165785500541BD3 /* TodoListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewState.swift; sourceTree = "<group>"; };
+		3C0433582165785500541BD3 /* TodoListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListState.swift; sourceTree = "<group>"; };
 		3C0645532145517F007C8235 /* react-swift-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "react-swift-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0645562145517F007C8235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C0645582145517F007C8235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,21 +68,20 @@
 		3C06457221455180007C8235 /* react-swift-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "react-swift-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C06457621455180007C8235 /* react_swift_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = react_swift_testUITests.swift; sourceTree = "<group>"; };
 		3C06457821455180007C8235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C0645C02145C761007C8235 /* MainAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
-		3C0645C62145CDDB007C8235 /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
 		3C0645C92145CF88007C8235 /* ReAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReAppState.swift; sourceTree = "<group>"; };
-		3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoDialogViewState.swift; sourceTree = "<group>"; };
-		3C1B952421691CFD001F2E6A /* DialogBaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBaseState.swift; sourceTree = "<group>"; };
+		3C1B952121691C9E001F2E6A /* AddTodoDialogState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoDialogState.swift; sourceTree = "<group>"; };
 		3C1B952D216A20F0001F2E6A /* TodoListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListUsecase.swift; sourceTree = "<group>"; };
 		3C1B9534216A360F001F2E6A /* ConvertWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertWorker.swift; sourceTree = "<group>"; };
 		3C1B9536216A568C001F2E6A /* TodoRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoRepo.swift; sourceTree = "<group>"; };
 		3C1B9538216B763A001F2E6A /* ActionCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreater.swift; sourceTree = "<group>"; };
-		3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDailogViewState.swift; sourceTree = "<group>"; };
+		3C31E755217B0E9D001A14B4 /* DetailDailogState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDailogState.swift; sourceTree = "<group>"; };
+		3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDialogController.swift; sourceTree = "<group>"; };
+		3C31E75D217D371F001A14B4 /* ReSwiftUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftUtil.swift; sourceTree = "<group>"; };
+		3C31E767217E1C77001A14B4 /* DialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		3C4BB2F22160A96B007FBD69 /* storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = storage.xcdatamodel; sourceTree = "<group>"; };
 		3C4BB3012160B9D7007FBD69 /* UserAction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3C4BB3022160B9D7007FBD69 /* UserAction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserAction+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3C4BB3062160BFED007FBD69 /* Dialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dialog.storyboard; sourceTree = "<group>"; };
-		3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoDialogController.swift; sourceTree = "<group>"; };
 		3CAB72282152FF6D00FD9B81 /* StorageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUtil.swift; sourceTree = "<group>"; };
 		3CAB722D2154562600FD9B81 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -119,19 +117,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C0433572165779500541BD3 /* ViewState */ = {
-			isa = PBXGroup;
-			children = (
-				3C0433582165785500541BD3 /* TodoListViewState.swift */,
-				3C1B952121691C9E001F2E6A /* AddTodoDialogViewState.swift */,
-				3C1B953A216C1232001F2E6A /* DetailDailogViewState.swift */,
-			);
-			path = ViewState;
-			sourceTree = "<group>";
-		};
 		3C06454A2145517E007C8235 = {
 			isa = PBXGroup;
 			children = (
+				3C31E75B217D36D6001A14B4 /* PodUtil */,
 				3C0645C22145CC43007C8235 /* Usecase */,
 				3C52B061214DFDA900EAF6A9 /* Core */,
 				3C0645552145517F007C8235 /* react-swift-test */,
@@ -157,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				3C1B952921692292001F2E6A /* Model */,
-				3C0645BE2145C429007C8235 /* Reducer */,
 				3C0645BF2145C437007C8235 /* Actions */,
 				3C0645C82145CF6B007C8235 /* State */,
 				3C0645CB21471E07007C8235 /* Screen */,
@@ -187,18 +175,9 @@
 			path = "react-swift-testUITests";
 			sourceTree = "<group>";
 		};
-		3C0645BE2145C429007C8235 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				3C0645C62145CDDB007C8235 /* MainReducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
 		3C0645BF2145C437007C8235 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				3C0645C02145C761007C8235 /* MainAction.swift */,
 				3C1B9538216B763A001F2E6A /* ActionCreater.swift */,
 			);
 			path = Actions;
@@ -216,8 +195,9 @@
 		3C0645C82145CF6B007C8235 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				3C1B952321691CE5001F2E6A /* BaseState */,
-				3C0433572165779500541BD3 /* ViewState */,
+				3C31E755217B0E9D001A14B4 /* DetailDailogState.swift */,
+				3C0433582165785500541BD3 /* TodoListState.swift */,
+				3C1B952121691C9E001F2E6A /* AddTodoDialogState.swift */,
 				3C0645C92145CF88007C8235 /* ReAppState.swift */,
 			);
 			path = State;
@@ -241,14 +221,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		3C1B952321691CE5001F2E6A /* BaseState */ = {
-			isa = PBXGroup;
-			children = (
-				3C1B952421691CFD001F2E6A /* DialogBaseState.swift */,
-			);
-			path = BaseState;
-			sourceTree = "<group>";
-		};
 		3C1B952921692292001F2E6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +237,14 @@
 			path = Workers;
 			sourceTree = "<group>";
 		};
+		3C31E75B217D36D6001A14B4 /* PodUtil */ = {
+			isa = PBXGroup;
+			children = (
+				3C31E75D217D371F001A14B4 /* ReSwiftUtil.swift */,
+			);
+			path = PodUtil;
+			sourceTree = "<group>";
+		};
 		3C4BB2F42160B277007FBD69 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,9 +257,10 @@
 		3C4BB3052160BFC6007FBD69 /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
+				3C31E767217E1C77001A14B4 /* DialogViewController.swift */,
 				3C4BB3062160BFED007FBD69 /* Dialog.storyboard */,
-				3C4BB3082160C0BB007FBD69 /* DialogViewController.swift */,
 				3C4BB3102160F812007FBD69 /* AddTodoDialogController.swift */,
+				3C31E757217B0F5C001A14B4 /* DetailDialogController.swift */,
 			);
 			path = Dialog;
 			sourceTree = "<group>";
@@ -497,24 +478,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0645592145517F007C8235 /* ViewController.swift in Sources */,
-				3C1B952521691CFD001F2E6A /* DialogBaseState.swift in Sources */,
-				3C1B953B216C1232001F2E6A /* DetailDailogViewState.swift in Sources */,
-				3C0645C72145CDDB007C8235 /* MainReducer.swift in Sources */,
 				3C0645572145517F007C8235 /* AppDelegate.swift in Sources */,
 				3CAB72292152FF6D00FD9B81 /* StorageUtil.swift in Sources */,
-				3C1B952221691C9E001F2E6A /* AddTodoDialogViewState.swift in Sources */,
-				3C0645C12145C761007C8235 /* MainAction.swift in Sources */,
+				3C1B952221691C9E001F2E6A /* AddTodoDialogState.swift in Sources */,
+				3C31E756217B0E9D001A14B4 /* DetailDailogState.swift in Sources */,
 				3C1B9539216B763A001F2E6A /* ActionCreater.swift in Sources */,
 				3C4BB3032160B9D7007FBD69 /* UserAction+CoreDataClass.swift in Sources */,
 				3C0645CA2145CF88007C8235 /* ReAppState.swift in Sources */,
 				3C1B952E216A20F0001F2E6A /* TodoListUsecase.swift in Sources */,
 				3C1B9537216A568C001F2E6A /* TodoRepo.swift in Sources */,
 				3C1B9535216A360F001F2E6A /* ConvertWorker.swift in Sources */,
+				3C31E758217B0F5C001A14B4 /* DetailDialogController.swift in Sources */,
 				3C4BB3112160F812007FBD69 /* AddTodoDialogController.swift in Sources */,
+				3C31E75E217D371F001A14B4 /* ReSwiftUtil.swift in Sources */,
 				3CAB722E2154562600FD9B81 /* StorageManager.swift in Sources */,
-				3C4BB3092160C0BB007FBD69 /* DialogViewController.swift in Sources */,
 				3C4BB3042160B9D7007FBD69 /* UserAction+CoreDataProperties.swift in Sources */,
-				3C0433592165785500541BD3 /* TodoListViewState.swift in Sources */,
+				3C31E768217E1C77001A14B4 /* DialogViewController.swift in Sources */,
+				3C0433592165785500541BD3 /* TodoListState.swift in Sources */,
 				3C4BB2F32160A96B007FBD69 /* storage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

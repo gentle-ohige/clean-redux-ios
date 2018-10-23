@@ -9,25 +9,37 @@
 import UIKit
 import ReSwift
 
-enum AddTodoDialogState {
-    case hide
-    case show
-    case showed
-    case cancel
-    case save(AddTodoDialogDataProtocol)
-}
-
-enum DetailDialogState {
-    case hide
-    case show(TodoModel)
-    case showed
-    case cancel
-    case upDate(TodoModel)
-}
-
 struct ReAppState:StateType {
-    var datas: [TodoModel] = []
-    var addDialogState: AddTodoDialogState = .hide
-    var detailDialogState: DetailDialogState = .hide
+    var todoListState = TodoListState()
+    var addDialogState = AddTodoDialogState()
+    var detailDialogState = DetailDialogState()
 }
+
+extension ReAppState {
+    public static func reducer (action:Action,state : ReAppState?) -> ReAppState {
+        var state = state ?? ReAppState()
+        state.todoListState = TodoListState.reducer( action: action,
+                                                     state: state.todoListState)
+        state.addDialogState = AddTodoDialogState.reducer( action: action,
+                                                     state: state.addDialogState)
+        state.detailDialogState = DetailDialogState.reducer( action: action,
+                                                     state: state.detailDialogState)
+        
+        return state
+    }
+}
+
+let mainStore = Store( reducer: ReAppState.reducer, state: nil, middleware: [logMiddleware] )
+
+
+let logMiddleware: Middleware<ReAppState> = {dispatch,getState in
+    return {
+        next in
+        return {
+            action in
+            //print(action)
+            return next(action)
+        }
+    
+    }}
 
